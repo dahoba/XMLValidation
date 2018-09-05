@@ -191,10 +191,10 @@ public class IntegrateTest {
 
     @Test
     /*
-     * TC718 08 valid Debit note
+     * TC718 08 invalid Debit note
      * */
     public void DebitNote_11() {
-        println("*********TC718 08 valid Debit note*************");
+        println("*********TC718 08 invalid Debit note*************");
         String XML = "src\\test\\resources\\DBN71800004v2.xml";
         JSONObject object = getResponseMessage(XML, config);
         String code = (String) object.get("code");
